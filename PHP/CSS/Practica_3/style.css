@@ -1,0 +1,25 @@
+nav{
+    text-align: right;
+    background: lightgray;
+    padding: 1em;
+}
+
+section{
+    margin: 0px 250px 0px 250px;
+}
+
+p{
+    text-align: justify;
+    text-align: center;
+}
+
+footer{
+    background: lightgray;
+}
+
+.logos{
+    width: 100px;
+    height: 100px;
+    margin-right: 35em;
+    margin-top: 1em;
+}
