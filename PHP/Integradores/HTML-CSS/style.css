@@ -12,6 +12,9 @@ body {
 
 }
 
+button{
+    padding: 10px 10px 10px 10px;
+}
 
 .main-header { 
 
@@ -29,48 +32,21 @@ body {
 
 }
 
-/*
-h2{
-    position: relative;
-    top: 380px;
-}
-*/
-
-a {
-
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    margin-left: 20px;
-}
-
-.container{
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-
-}
-
 .font_white{
 
     color: white;
-    font-size: 2em;
-    margin-top: 1vw;
-    
+    font-size: 22px;
 }
 
 #logo{
 
-    background-color: black;
     width: 25%;
     justify-content: space-between;
 
 }
 
-header nav .navegacion{
+.navegacion{
 
-    background-color: yellow;
     float: right;
     color: white;
     width: 75%;
@@ -78,11 +54,264 @@ header nav .navegacion{
 
 }
 
+header div div a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+header div div a:hover{
+
+    animation-name: sombra;
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;
+
+}
+
+@keyframes sombra{
+
+    100%{
+        text-shadow: black 2px 5px;
+        font-size: 21px;
+    }
+
+}
+
 .titulo{
 
-    background-color: blue;
     width: 100%;
     height: auto;
-    align-items:center;
+    align-self: flex-end;
+    justify-self: start;
+    margin-bottom: 60px;
+    
+}
 
+.main-section{
+
+    margin: 20px 100px 10px 100px;
+
+}
+
+.p_section{
+
+    font-size: 27px;
+    height: 20px;
+    width: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+}
+
+.cards-container{
+
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+    line-height: 27px;
+} 
+
+.info-cards{
+
+    height: 300px;
+    width: 340px;
+    text-align: center;
+}
+
+.separador{
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+.adds-cards{
+
+    background-color: #eeeeee;
+    height: 560px;
+    width: 340px;
+    border: 1px solid #d4d4d4;
+
+}
+
+.adds-img{
+
+    height: auto;
+    width: 100%;
+
+}
+
+.p_section_add{
+
+    font-size: 26px;
+    margin-left: 13px;
+
+}
+
+.p_section_add_content{
+
+    font-size: 15px;
+    line-height: 27px;
+    margin:13px 20px 13px 13px;
+
+}
+
+.precio{
+
+    color: rgb(112, 160, 0);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px 0px 13px 13px;
+}
+
+.logos-detalles{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px 13px 50px;
+}
+
+.button_propiedad{
+    
+    height: 50px;
+    width: 94%;
+    background-color: rgb(252, 122, 0);
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.button_propiedad:hover{
+
+    animation-name: seleccion;
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;
+}
+
+@keyframes seleccion{
+
+    100% {
+        background-color: rgb(221, 206, 0);
+    }
+
+}
+
+.button_ver-container{
+
+    height: 60px;
+    width: auto;
+}
+
+.button_ver{
+    
+    height: 45px;
+    width: 130px;
+    background-color: rgb(64, 160, 0);
+    color: white;
+    font-weight: bold;
+    border: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 150px;
+}
+
+.button_ver:hover{
+    
+    animation-name: seleccion;
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;
+    
+}
+
+.footer-container{
+
+    background-image: url(./img/encuentra.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    height: 350px;
+    width: auto;
+    padding-top: 120px;
+   
+}
+
+.font_white2{
+
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 150px;
+}
+
+.font_white3{
+
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    margin: 38px 0px 38px 150px;
+}
+
+.button_contacto{
+
+    height: 45px;
+    width: 150px;
+    background-color: rgb(252, 122, 0);
+    color: white;
+    font-weight: bold;
+    border: transparent;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+.button_contacto:hover{
+
+    animation-name: seleccion;
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;
+
+}
+
+.footer-bottom-container{
+
+    background-color: rgb(44, 44, 44);
+    height: 65px;
+    width: 100%;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navegacion2{
+
+    margin-top: 30px;
+    margin-left: 40px;
+    
+}
+
+.navegacion2 a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    font-size: 17px;
+
+}
+
+.info{
+
+    color: white;
+    margin-top: 30px;
+    margin-right: 50px;
 }
