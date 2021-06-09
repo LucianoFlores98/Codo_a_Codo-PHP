@@ -1,0 +1,53 @@
+.container-main{
+
+    font-family: Tahoma, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    height: 600px;
+    width: auto;
+    display: flex;
+
+}
+
+.ej_1{
+
+    background-color: rgb(100, 0, 139);
+    height: 100%;
+    width: 50%;
+    padding: 2px;
+}
+
+.ej_2{
+    
+    background-color: rgb(139, 0, 81);
+    height: 100%;
+    width: 50%;
+    padding: 2px;
+}
+
+button{
+
+    margin-top: 50px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width:50%;
+    border: none;
+    color: rgb(30, 0, 48);
+    font-size: 25px;
+}
+
+button:hover{
+
+    animation-name: seleccion;
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;
+}
+
+@keyframes seleccion{
+
+    100% {
+        background-color: rgb(242, 210, 255);
+    }
+
+}
